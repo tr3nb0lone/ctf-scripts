@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 
-box=$1
-ssh-keygen -f ~/keys/key_"$box"
+BOX=$1
+IP=$2
+
+ssh-keygen -f ~/keys/key_"$BOX" -N ''
+
