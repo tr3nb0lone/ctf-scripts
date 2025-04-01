@@ -1,7 +1,9 @@
 # About:
 This is a place where I store my custom CTF scripts. The most valuable one being the `hacktheboxer.sh`, which is really a streamliner of my wokflow with tmux and fzf. These are the tools I use for the boot2root CTFs.
+
 ## Included scripts:
-- `hacktheboxer.sh`
+- `hacktheboxer.sh` - configure TMUX sessions, dirs and apropriate panes.
+- `hosts.py` effortlessly edit hosts file.
 
 
 # Usage:
