@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+
 import typer
 
 # instantiation:
@@ -15,18 +16,28 @@ hosts = """
 """
 
 
+# Display entries of the hosts file:
 @app.command()
 def display():
     print(hosts)
 
-
+# Add hostnames - requires read/write on hosts file
 @app.command()
-def add(ip: str, hostname: str):
+def add(ip: str, hostname: str, hostname2: str, hostname3: str, hostname4: str):
     f = open("/etc/hosts", "a")
     f.write(f"\n{ip}\t{hostname}")
-    print(f"\n[+] HOSTNAME: {hostname} added to hosts file!")
+    print(f" [+] HOSTNAME: {hostname} added to hosts file!")
 
+# Add hosts name from a file (useful to use alongside NXC):
+@app.command()
+def file(fname: str):
+    f = open(fname, "r")
+    with open("/etc/hosts", "a") as a:
+        a.write(f)
+        print(f"Written {fname} into hosts file!")
+    
 
+# Reset/Remove all the entries of the hosts file
 @app.command()
 def flush():
     with open("/etc/hosts", "w") as f:
