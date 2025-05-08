@@ -16,6 +16,6 @@ cp ./scripts/ ${HOME}/.local/bin/
 ```
 
 ### TODO:
-[] Categorize scripts.
-[] incorporate hosts.py to work alongside generated files.
-[] Make SMB checkers (based on impacket)
+- [] Categorize scripts.
+- [] incorporate hosts.py to work alongside generated files.
+- [] Make SMB checkers (based on impacket)
