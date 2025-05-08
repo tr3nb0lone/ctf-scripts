@@ -4,6 +4,8 @@ This is a place where I store my custom CTF scripts. The most valuable one being
 ## Included scripts:
 - `hacktheboxer.sh` - configure TMUX sessions, dirs and apropriate panes.
 - `hosts.py` effortlessly edit hosts file.
+- `ldap.py` a toy to play with ldap.
+- ``
 
 
 # Usage:
@@ -13,3 +15,7 @@ Copying the scripts to your local PATH is just enough if you are working with a 
 cp ./scripts/ ${HOME}/.local/bin/
 ```
 
+### TODO:
+[] Categorize scripts.
+[] incorporate hosts.py to work alongside generated files.
+[] Make SMB checkers (based on impacket)
